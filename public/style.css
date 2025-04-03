@@ -1,0 +1,105 @@
+/* style.css */
+
+/* GLOBAL RESET + SIMPLE STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY
+   Changed background to a sand/skin-tan color #f5ead6.
+   Adjust as desired for darker/lighter tones.
+*/
+body {
+  font-family: "Palatino Linotype", "Times New Roman", serif;
+  background: #f8eccf;  /* Sand / skin-tan color */
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+  padding: 20px;
+}
+
+/* PAGE CONTAINER */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 30px 20px;
+}
+
+/* MAIN TITLE */
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+/* SUBTITLE OR INTRO TEXT */
+.intro {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* ORDERED LIST (QUESTIONS) */
+ol {
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+/* LIST ITEMS */
+ol li {
+  margin: 12px 0;
+}
+
+/* SUBMIT BUTTON */
+#submitBtn {
+  display: inline-block;
+  background: #e2b4b4; /* Soft pinkish hue reminiscent of Rice Purity */
+  color: #000;
+  font-size: 1em;
+  padding: 10px 25px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#submitBtn:hover {
+  background: #dd5c5c;
+}
+
+/* RESULT DISPLAY AREA */
+#scoreDisplay {
+  margin-top: 40px;
+  display: none; /* Hidden by default until user submits */
+}
+
+/* THE BIG SCORE TEXT, SIMILAR TO RICE PURITY TEST */
+#finalScore {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* OPTIONAL SUBTEXT BELOW THE SCORE */
+#scoreMessage {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* RESPONSIVE LAYOUT FOR SMALLER DEVICES */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 20px 10px;
+  }
+  ol {
+    padding-left: 20px;
+  }
+}

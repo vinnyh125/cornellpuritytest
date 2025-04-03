@@ -1,0 +1,39 @@
+body {
+  background-color: #f8eccf; /* or a sand/tan color you like */
+  font-family: "Times New Roman", serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.results-container {
+  padding: 50px 20px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 2.4em;
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin: 20px 0 10px 0;
+}
+
+.score {
+  font-size: 3em;
+  font-weight: bold;
+  color: red; /* Big, red text for the score */
+  margin-bottom: 20px;
+}
+
+.thank-you {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-note {
+  font-size: 1em;
+  color: #555;
+}

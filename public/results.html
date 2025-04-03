@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cornell Purity Score</title>
+  <link rel="stylesheet" href="results-style.css">
+</head>
+<body>
+  <div class="results-container">
+    <!-- Replace with any heading/logo you like -->
+    <h1>The Official Cornell Purity Test</h1>
+    
+    <!-- The big "Your score" text, in red -->
+    <h2>Your score:</h2>
+    <div id="scoreDisplay" class="score"></div>
+    
+    <p id="thankYou" class="thank-you">Thank you for your submission!</p>
+    <p class="footer-note">
+      (Inspired by the Rice Purity Test from Rice University.)
+    </p>
+  </div>
+
+  <script>
+    // Parse "score" from the query parameter, e.g. results.html?score=75
+    const params = new URLSearchParams(window.location.search);
+    const userScore = params.get('score') || 0; // default 0 if missing
+
+    // Show the score in the red display div
+    const scoreDisplay = document.getElementById('scoreDisplay');
+    scoreDisplay.textContent = userScore;
+  </script>
+</body>
+</html>
