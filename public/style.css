@@ -22,12 +22,12 @@ body {
 
 /* PAGE CONTAINER */
 .container {
-  max-width: 700px;
+  width: fit-content;
   margin: 0 auto;
   background: transparent;
   border: 1px solid black;
   border-radius: 4px;
-  padding: 30px 20px;
+  padding: 40px 10%;
 }
 
 /* MAIN TITLE */
